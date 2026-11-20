@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <title>Maths Made Easy | JSS 3 Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Maths Made Easy home">
+        <span class="brand-mark" aria-hidden="true">∑</span>
+        <span class="brand-name">maths<span>made</span>easy</span>
+      </a>
+      <span class="level-pill"><span class="status-dot"></span> JSS 3 · BECE practice</span>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR DAILY PRACTICE</p>
+          <h1>Maths gets easier<br>with <span>every question.</span></h1>
+          <p class="intro-text">Build confidence for your BECE with focused, syllabus-aligned practice and clear step-by-step explanations.</p>
+        </div>
+        <div class="math-art" aria-hidden="true">
+          <span class="math-symbol symbol-one">÷</span>
+          <span class="math-symbol symbol-two">π</span>
+          <span class="math-symbol symbol-three">x²</span>
+          <span class="math-symbol symbol-four">+</span>
+          <div class="art-card">
+            <span class="art-card-label">KEEP GOING</span>
+            <span class="art-card-equation">1 step at a time <span>↗</span></span>
+            <div class="art-progress"><span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="practice-area" aria-labelledby="practice-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-eyebrow">THE PRACTICE ROOM</p>
+            <h2 id="practice-title">Let’s work it out.</h2>
+          </div>
+          <div class="practice-filters">
+            <label class="topic-select-wrap">
+              <span class="sr-only">Choose a year</span>
+              <select id="year-filter" aria-label="Filter questions by year">
+                <option value="all">All years</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+              </select>
+              <span class="select-chevron" aria-hidden="true">⌄</span>
+            </label>
+            <label class="topic-select-wrap">
+              <span class="sr-only">Choose a topic</span>
+              <select id="topic-filter" aria-label="Filter questions by topic">
+                <option value="all">All topics</option>
+              </select>
+              <span class="select-chevron" aria-hidden="true">⌄</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="practice-grid">
+          <aside class="progress-card" aria-label="Your practice progress">
+            <div class="progress-card-top">
+              <span class="progress-icon" aria-hidden="true">✳</span>
+              <span class="progress-label">YOUR PROGRESS</span>
+            </div>
+            <div class="score-number" id="score-count">0<span> / 0</span></div>
+            <p class="score-caption">correct answers</p>
+            <div class="score-divider"></div>
+            <div class="completion-row">
+              <span>Questions answered</span>
+              <strong id="answered-count">0</strong>
+            </div>
+            <div class="completion-track" aria-hidden="true"><span id="completion-fill"></span></div>
+            <p class="encouragement" id="encouragement">Every question is a chance to grow.</p>
+            <button class="reset-button" id="reset-button" type="button">↻ <span>Start over</span></button>
+          </aside>
+
+          <article class="question-card" aria-live="polite">
+            <div class="question-meta">
+              <span class="question-counter" id="question-counter">QUESTION 1 OF 20</span>
+              <div class="topic-meta">
+                <span class="topic-tag" id="topic-tag">Number</span>
+                <span class="datel-credit" aria-label="Powered by Datel">Powered by Datel</span>
+              </div>
+            </div>
+            <div class="question-content" id="question-content">
+              <h3 id="question-text"></h3>
+              <div class="answer-list" id="answer-list" role="group" aria-label="Answer choices"></div>
+            </div>
+            <div class="feedback" id="feedback" hidden aria-live="polite"></div>
+            <div class="question-footer">
+              <button class="back-button" id="previous-button" type="button" aria-label="Previous question">← <span>Previous</span></button>
+              <span class="footer-hint">Take your time. You’ve got this.</span>
+              <button class="next-button" id="next-button" type="button">Next question <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="source-note"><span aria-hidden="true">✦</span> Original BECE-style practice questions, written for JSS 3 syllabus topics. These are not reproduced past-paper questions.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Made for curious minds.</span>
+      <span>Practise a little. Progress a lot. <span class="footer-heart" aria-hidden="true">♥</span></span>
+    </footer>
+  </div>
+</body>
+</html>
